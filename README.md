@@ -29,35 +29,35 @@ This project demonstrates a complete **serverless data pipeline** that automatic
 Amazon S3 is used as the central raw storage layer. It stores incoming flight CSV files in a partitioned structure for better performance and scalability.
 <img width="1532" height="458" alt="image" src="https://github.com/user-attachments/assets/f4863c7a-980e-4f63-8a70-0d82ce9b6512" />
 
- **Event Triggering: Amazon EventBridge + S3 Events / CloudTrail**
+ ## Event Triggering: Amazon EventBridge + S3 Events / CloudTrail
  Amazon EventBridge detects new flight data files uploaded to S3 and automatically triggers the Step Functions pipeline for processing.
 
-**Data Catalog: AWS Glue Data Catalog**
+## Data Catalog: AWS Glue Data Catalog
 AWS Glue Data Catalog serves as the central metadata store for all tables and schemas used in the pipeline.
 
-**Crawler: AWS Glue Crawlers (Dim & Fact)**
+## Crawler: AWS Glue Crawlers (Dim & Fact)
 AWS Glue Crawlers (for Dimension & Fact data) automatically discover schema from S3 files and maintain metadata in Data Catalog.
 
 <img width="1557" height="390" alt="image" src="https://github.com/user-attachments/assets/082040c2-6a53-40d7-b6a5-e841d3371b2b" />
 
-**ETL Processing: AWS Glue Visual ETL (Spark-based)**
+## ETL Processing: AWS Glue Visual ETL (Spark-based)
 AWS Glue Visual ETL (Spark-based) handles data transformation, joins, and loads clean data into Amazon Redshift.
 
 <img width="756" height="550" alt="image" src="https://github.com/user-attachments/assets/46bfe990-4944-4311-914a-818677cab3f3" />
 
-**Orchestration: AWS Step Functions**
+## Orchestration: AWS Step Functions
 AWS Step Functions orchestrates and manages the complete end-to-end workflow of the data ingestion pipeline.
 <img width="882" height="573" alt="image" src="https://github.com/user-attachments/assets/0f3aeb7d-cda7-4825-837e-d42dcf83fe68" />
 
-**Notification: Amazon SNS**
+## Notification: Amazon SNS
 Amazon SNS delivers real-time success/failure notifications after each pipeline execution.
 <img width="1072" height="576" alt="image" src="https://github.com/user-attachments/assets/b8bdf366-6a85-4bec-a467-08f15d1124e2" />
 
- **Data Warehouse: Amazon Redshift**
+ ## Data Warehouse: Amazon Redshift
  Amazon Redshift acts as the centralized data warehouse for storing processed flight data for high-speed analytics and querying.
  <img width="1807" height="691" alt="image" src="https://github.com/user-attachments/assets/452dbb2b-12d2-4659-b196-dedc845f549d" />
 
- **Monitoring: AWS CloudWatch**
+ ## Monitoring: AWS CloudWatch
  AWS CloudWatch provides comprehensive monitoring, logging, and alerting for all components of the data pipeline.
  
 ## 📊 Architecture Flow
