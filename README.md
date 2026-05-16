@@ -118,16 +118,20 @@ Amazon SNS delivers real-time success/failure notifications after each pipeline 
 - Dashboard using Amazon QuickSight
 - Cost optimization
 
-## 🧑‍💻 Author
+---
+
+## 🙋‍♂️ About the Author
 
 **Mohammad Karim**  
-AWS Certified | Data Engineer
+Aspiring Data Engineer | AWS Certified Cloud Practitioner
+
+**Connect with me:**
+
+- LinkedIn : www.linkedin.com/in/mohammad-karim-973811258
+- Email  : Karimcse07@gmail.com
 
 ---
-Name: Mohammad Karim 
-Email: Karimcse07@gmail.com
-Mob: +91-7065-053-815
-Linkedin: www.linkedin.com/in/mohammad-karim-973811258
----
 
-**⭐ Feel free to star this repository if you find it helpful!**
+This project was built as a hands-on demonstration of building a **production-grade serverless ETL pipeline** on AWS.
+
+Thank you for visiting! ✨
