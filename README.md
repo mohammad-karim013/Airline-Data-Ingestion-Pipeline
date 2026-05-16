@@ -25,7 +25,7 @@ This project demonstrates a complete **serverless data pipeline** that automatic
 - **Data Warehouse**: Amazon Redshift
 - **Monitoring**: AWS CloudWatch
 
-**Storage: Amazon S3 (Raw & Partitioned data)**
+## Storage: Amazon S3 (Raw & Partitioned data)
 Amazon S3 is used as the central raw storage layer. It stores incoming flight CSV files in a partitioned structure for better performance and scalability.
 <img width="1532" height="458" alt="image" src="https://github.com/user-attachments/assets/f4863c7a-980e-4f63-8a70-0d82ce9b6512" />
 
