@@ -5,6 +5,7 @@ End-to-End Automated Daily Flight Data ETL Pipeline using AWS S3, Glue, Step Fun
 
 **End-to-End Automated ETL Pipeline**
 End-to-End Automated ETL Pipeline for ingesting daily flight data from S3 into Amazon Redshift using modern AWS services.
+
 <img width="1861" height="522" alt="image" src="https://github.com/user-attachments/assets/6d4f4624-5233-430a-a53e-fe95c76b437b" />
 
 
@@ -26,7 +27,7 @@ This project demonstrates a complete **serverless data pipeline** that automatic
 
 ## 📊 Architecture Flow
 
-1. Daily CSV files arrive in S3 (`daily_raw/date=YYYY-MM-DD/`)
+1. Daily CSV files arrive in S3 (`daily_raw/date=2024-01-21/`)
 2. EventBridge detects new file and triggers Step Function
 3. Glue Crawler updates schema
 4. Glue Visual ETL Job performs data transformation + joins with dimension tables
@@ -41,12 +42,6 @@ This project demonstrates a complete **serverless data pipeline** that automatic
 - Robust error handling and retry mechanism using Step Functions
 - Proper logging and monitoring
 - Scalable and production-ready architecture
-
-## 📸 Screenshots
-
-![Step Function Workflow](screenshots/step-function.png)
-![Glue ETL Job](screenshots/glue-visual-etl.png)
-![Redshift Data](screenshots/redshift-query-result.png)
 
 ## 🗄 Database Schema
 
